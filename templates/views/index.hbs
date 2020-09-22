@@ -1,0 +1,31 @@
+<!-- PUBLIC FOLDER Served up as a part of Express Server -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather</title>
+    <link rel="icon" href="/imgs/cloud-icon.png">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p class="home-para">Check Weather of your Area</p>
+       <form >
+            <input placeholder="Location" type="text">
+            <button>Search</button>
+            <div class='msg-para'>
+                <p id="message-1"></p>
+                <p id="message-2"></p>
+            </div>
+        </form>
+
+        
+    </div>
+    
+    
+    {{!-- title in braces here targeting title in app --}}
+    {{>footer}}
+    <script src="/js/app.js"></script>
+</body>
+</html> 
