@@ -7,9 +7,9 @@
             if(error){
                 callback("Unable to connect with weather service !!", undefined);
             } else if(response.body.error){
-                callback("Unable to find location !!", undefined);
+                callback("Unable to find location! Try something else ", undefined);
             } else{
-                callback(undefined,"Weather is--" +response.body.current.weather_descriptions[0] +". It is currently "+ response.body.current.temperature +" degree out. But feels like "+response.body.current.feelslike+"."
+                callback(undefined,"Weather is: " +response.body.current.weather_descriptions[0] +". It is currently "+ response.body.current.temperature +" degree out. But feels like "+response.body.current.feelslike+"."
                 ) // \n for next line
             }
         })
