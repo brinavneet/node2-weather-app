@@ -9,8 +9,7 @@
             } else if(response.body.error){
                 callback("Unable to find location! Try something else ", undefined);
             } else{
-                callback(undefined,"Weather is: " +response.body.current.weather_descriptions[0] +". It is currently "+ response.body.current.temperature +" ºC degree out. But feels like "+response.body.current.feelslike+"ºC."
-                ) // \n for next line
+                callback(undefined,"Weather is: " +response.body.current.weather_descriptions[0] +". It is currently "+ response.body.current.temperature +" ºC out. But feels like "+response.body.current.feelslike+"ºC." +"\n Humidity is: "+ response.body.current.humidity+'% .') // \n for next line
             }
         })
     }

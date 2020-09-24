@@ -17,12 +17,21 @@
     <div class="main-content">
         {{>header}}
         <p>{{type}}</p>
-        <p>You can submit your question here..</p>
-        <textarea id="textArea" name="question" rows="5" cols="30" placeholder="Text Here"></textarea>
+        <p>You can submit your comments here..</p>
+        <textarea id="textArea" name="question" rows="5" cols="30" placeholder="Text Here"></textarea><br>
+        <button onclick="textAreaFunc()">Submit Response</button>
         
     </div>
     
     
     {{>footer}}
+
+    <script>
+        function textAreaFunc() {
+           if(confirm('Your response submitted')){
+                window.location.reload();  
+            }
+        }
+    </script>
 </body>
 </html>
