@@ -6,11 +6,13 @@
 
 
  const app = express() // here we will not pass any argument
-
+ const port = process.env.PORT || 3000 //for heroku deployment
+ 
  //define paths for Express config
  const publicDirectoryPath = path.join(__dirname, '../public') //setting to go to this folder by using path module
  const viewsPath = path.join(__dirname, '../templates/views') //setting path for views 
  const partialsPath = path.join(__dirname, '../templates/partials')
+ 
 
  //Setup handlebars engine and views location
  app.set('view engine', 'hbs') // templating engine handlebars for dynamic assets
@@ -91,8 +93,8 @@
    })
    
    // express can also detect object and array and json 
- app.listen(3000 , () => {
-    console.log('Server is up on port 3000');
+ app.listen(port , () => {
+    console.log('Server is up on port' + port);
  })//  starts the server and listen to specific port and also have a callback
 
 
