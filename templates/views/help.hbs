@@ -6,12 +6,20 @@
     <title>Help</title>
     <link rel="icon" href="/imgs/cloud-icon.png">
     <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        p{
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <div class="main-content">
         {{>header}}
         <p>{{type}}</p>
-        <p>This is just text</p>
+        <p>You can submit your question here..</p>
+        <textarea id="textArea" name="question" rows="5" cols="30" placeholder="Text Here"></textarea>
+        
     </div>
     
     

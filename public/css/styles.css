@@ -52,6 +52,12 @@ button{
     color: white;
     padding: 8px;
 }
+#textArea{
+    border: 2px solid white;
+    background-color: transparent;
+    opacity: 0.8;
+    font-size: 15px;
+}
 .home-para{
     color:#333333;
     font-size: 18px;
