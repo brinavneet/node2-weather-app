@@ -24,7 +24,7 @@
    app.get('', (req, res) => {
       res.render('index', {
          title:'Weather App',
-         name:'Mak Ryder',
+         name:'Navneet',
          
       }) // render allows us to render one of our viwes
    }) //'' leaving blank defines that it's root folder
@@ -32,7 +32,7 @@
    app.get('/about', (req, res) => {
       res.render('about', {
          title:'About Us',
-         name:'Mak Ryder',
+         name:'Navneet',
          
       })
    })
@@ -40,7 +40,7 @@
    app.get('/help', (req, res) => {
       res.render('help', {
          title:'Help',
-         name:'Mak Ryder',
+         name:'Navneet',
          
       })
    })
@@ -78,7 +78,7 @@
    app.get('/help/*',(req, res)=>{
       res.render('404', {
          title:'404',
-         name:'Mak Ryder',
+         name:'Navneet',
          errorMessage:'Help article not found..!!'
       })
       
@@ -87,7 +87,7 @@
    app.get('*',(req, res) => {
       res.render('404', {
          title:'404',
-         name:'Mak Ryder',
+         name:'Navneet',
          errorMessage:'Page not found'
       })
    })
